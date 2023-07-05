@@ -1,0 +1,425 @@
+#cabecalho {
+  background: linear-gradient(to left, white, #00B4DB, #0083B0);
+  border-width: 2px;
+  border-style: outset;
+  margin-top: 5px;
+  font-family: cursive;
+  padding-top: 40px;
+  height: auto;
+}
+
+.conteudo {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#menu-wrapper {
+  position: sticky;
+  top: 60px;
+  width: 10%;
+  border-color: #000;
+  z-index: 999;
+}
+
+.menu {
+  border-color: black;
+  background: none;
+  margin: 10px;
+  color: black;
+  justify-content: space-around;
+  position: relative;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: small;
+}
+
+.menu li {
+  display: inline-block;
+  position: relative;
+  border-color: black;
+  border: 1px black;
+  font-family: Arial;
+  font-size: small;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  transition: background-color 0.28s ease;
+  font-family: Arial;
+  font-size: small;
+}
+
+.menu a:hover {
+  background-color: lightblue;
+}
+
+.menu li:hover > a {
+  background-color: lightblue;
+  transition: background-color 0.28s ease;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  z-index: 1;
+  background-color: #fff;
+  border: 1px solid #000000;
+  font-family: Arial;
+  font-size: small;
+  transition: background-color 0.28s ease;
+}
+
+.menu li:hover > .submenu {
+  display: block;
+}
+
+.submenu li {
+  display: block;
+  position: relative;
+  font-family: Arial;
+  font-size: small;
+}
+
+.submenu a {
+  padding: 10px;
+  color: #000;
+  font-family: Arial;
+  font-size: small;
+}
+
+.submenu a:hover {
+  background-color: #f1f1f1;
+}
+
+.submenu2 {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 100%;
+  min-width: 200px;
+  z-index: 1;
+  background-color: #fff;
+  border: 1px solid #000000;
+  font-family: Arial;
+  font-size: small;
+}
+
+.menu li:hover > .submenu2 {
+  display: block;
+}
+
+.submenu2 li {
+  display: inline;
+}
+
+.submenu2 a {
+  padding: 10px;
+  color: #000;
+  font-family: Arial;
+  font-size: small;
+}
+
+.submenu2 a:hover {
+  background-color: #f1f1f1;
+}
+
+.creditos {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 50px;
+  color: #999;
+}
+
+.centro {
+  text-align: center;
+}
+
+.fundo {
+  background-color: white;
+}
+
+#imagem {
+  background-color: white;
+}
+
+.links {
+  border-color: black;
+  background: white;
+  margin: 10px;
+  color: black;
+  justify-content: space-around;
+  position: relative;
+  text-decoration: none;
+}
+
+.links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.links a:hover {
+  color: #00B4DB;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
+.links2 {
+  border-color: black;
+  background: white;
+  margin: 10px;
+  color: red;
+  justify-content: space-around;
+  position: relative;
+  text-decoration: none;
+}
+
+.links2 a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.links2 a:hover {
+  color: #00B4DB;
+}
+
+.links2 a:hover::after {
+  width: 100%;
+}
+
+body {
+  background-color: white;
+  margin-right: 5;
+  margin-left: 5;
+}
+
+.gif {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.formatar {
+  display: table;
+  margin: 0 auto;
+}
+
+.tabela {
+  border-collapse: collapse;
+  font-family: Arial;
+  line-height: 1.5;
+  background-color: azure;
+  justify-content: space-around;
+  max-width: 1000px;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.table {
+  width: 65%;
+  border-collapse: collapse;
+  font-family: Arial;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  background-color: azure;
+  
+}
+
+.table th {
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(209, 238, 254));
+}
+
+.botao {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #718ff1;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.botao:hover {
+  background-color: rgb(76, 146, 146);
+}
+
+h1 {
+  background: linear-gradient(to right, white, #00B4DB);
+  font-style: italic;
+  font-family: Arial;
+  text-align: center;
+}
+
+h2 {
+  background: linear-gradient(to right, white, #00B4DB);
+  font-style: italic;
+  font-family: Arial;
+  text-align: center;
+}
+
+h3 {
+  background: linear-gradient(to right, white, #00B4DB);
+  font-style: italic;
+  font-family: Arial;
+  text-align: center;
+}
+
+h4 {
+  background: linear-gradient(to right, white, #00B4DB);
+  font-style: italic;
+  font-family: Arial;
+  text-align: center;
+}
+
+img.max-width-100 {
+  max-width: 600px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-indent: 20px;
+}
+
+ol {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-indent: 20px;
+}
+
+li {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-indent: 20px;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+.continuar-lendo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.continuar-lendo a {
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #000;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  transition: background-color 0.2s ease;
+}
+
+.continuar-lendo a:hover {
+  background-color: #000;
+  color: #fff;
+}
+p{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+#proxima-secao:target {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+@media (max-width: 767px) {
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .menu{
+    background-color:white;
+  }
+  .table {
+    width: auto;
+    font-family: Arial;
+  }
+
+  .table th,
+  .table td {
+    white-space: nowrap;
+  }
+
+  img.max-width-200 {
+    max-width: 100px;
+  }
+
+  p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  li {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .gif img {
+    height: auto;
+    max-height: 200px;
+    max-width: 100%;
+  }
+
+  #cabecalho {
+    width: 100%;
+    height: auto;
+  }
+
+  #imagem {
+    width: 100%;
+  }
+
+  .formatar {
+    max-width: 100%;
+  }
+
+  .tabela {
+    max-width: 100%;
+    margin: 0;
+  }
+}
