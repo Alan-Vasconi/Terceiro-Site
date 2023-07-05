@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="arquitetura.css">
+    <title>BES - Classes</title>
+
+    <div id="cabecalho" align="center">
+        <div id="imagem">
+        <img src="imagens/cabecalho.jpg" height="140" style="border: 0px solid black"></td> </div>
+        <div id="links" align="center">
+            <h4 class="links">
+                <span class="links">
+                    <a href="index.html" class="links">Página inicial </a>
+                    <a href="Computadores.html" class="links">Computadores </a>
+                    <a href="Hierarquia.html" class="links">Memórias</a>
+                    <a href="Von Neumann.html" class="links">Von Neumann</a>
+                    <a href="Organização.html" class="links">Organização de Computadores</a>
+                    <a href="barramento.html" class="links">Barramento</a>
+                    <a href="../index.html" class="links">Sobre o BES-classes</a>
+                </span></h4>
+        
+        </div>
+    </div>
+</head>
+<body>
+    <div id="menu-wrapper">
+        <ul id="menu" class="menu" align="left">
+            <li>
+                <a href="#">☰ Menu</a>
+                <ul class="submenu">
+                    <li><a href="../index.html">Site Inicial</a></li>
+                    <li><a href="index.html">Arquitetura e Organização de Computadores</a></li>
+                    <li><a href="../ppsw/index.html">Processos de Produção de Software</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <table class="tabela" border="0" align="center">
+        <tr>
+        <td>
+            <br>
+            <div class="gif" align="center">
+                <img src="imagens/Simulador.gif" class="max-width-100">
+            </div><br>
+            <h2>Von Neumann:</h2>
+            <br>
+                
+            <p>John Von Neumann foi um importante matemático húngaro de origem judaica, no qual através de seus esforços juntamente com sua equipe em 1946 consolidou a teoria cibernética.</p>
+            <p>Desta maneira, a arquitetura de John Von Neumann é composta por três importantes partes, sendo elas:
+                <ol>
+                    <li><b>Unidade Central de Processamento - Ponto este composto por registradores, unidade de controle, unidade de lógica aritmética e contador de programa, desempenhando as seguintes funções:</b></li>
+                    <p>Registradores: São as memórias temporárias que existem na CPU (muito rapidas)</p>
+                    <p>Unidade de Controle: Responsável por controlar as instruções, buscando na memória principal, classificando e ordenando sua execução</p>
+                    <p>Unida Lógica Aritmética: Parte responsável pela execução das equações</p>
+                    <p>Contador de Programa: Responsável por avisar a Unidade de Controle sobre a proxima instrução que deve ser buscada e executada, atualizando a cada vez que é executado um ""ciclo""</p>
+                </ol>
+                <ol>
+                    <li><b>Sistema de memória:</b></li>
+                    <p>Responsável por armazenar os dados e os códigos</p>
+                </ol>
+                <ol>
+                    <li><b>Sistema de Entrada e Saída:</b></li>
+                    <p>Responsável por pegar os dados e demonstrar os dados que foram utilizados</p>
+                </ol>
+            </p><br>
+                <h2>Ciclo do programa</h2><br>
+                <ol>
+                    <li>Inicialmente é determinado pela Unidade de Controle qual é a instrução e qual será a proxima</li>
+                    <li>É buscado a instrução necessária pela Unidade de Controle na Memória Principal</li>
+                    <li>Decodificação da instrução para uma linguaguem possível de ser interpretado pela ULA</li>
+                    <li>Dados são transferidos da memória para os registradores</li>
+                    <li>É executada a instrução pela Unidade Lógica Aritmética e coloca na memória ou nos registradores</li>
+
+                </ol><br>
+                <h2>Instruções do simulador:</h2><br>
+                <p><b>Dados</b> -> X,Y,Z,W,T1,T2</p>
+                <p>Instruções possuem no máximo 1 operando</p>
+                    
+                <p>-> <b>Lod</b> {Var e #num -> carrega um valor p/ o acomulador</p>
+                <p>-> <b>STO</b> {Var -> coloca o valor do acumulador em uma var</p>
+                <p>-> <b>ADD</b> {Var e # num -> Soma um valor ao acumulador</p>
+                <p>-> <b>SUB</b> {Var e # num -> Subtrai  um valor do acumulador</p>
+                <p>-> <b>MUL</b> {Var e #num -> multiplica um valor pelo acumulador</p>
+                <p>-> <b>DIV</b> {Var e #num -> Multiplica um valor pelo acumulador</p>
+                <p>-> <b>HLT</b> - > FINALIZA O PROGRAMA</p>
+
+            </td>
+        </tr>
+    </table>
+    <footer class="creditos">
+        © 2023 Alan Andrade Vasconi de Souza.
+    </footer>
+</body>
+</html>

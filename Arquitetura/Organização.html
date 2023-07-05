@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="arquitetura.css">
+    <title>BES - Classes</title>
+
+    <div id="cabecalho" align="center">
+        <div id="imagem">
+        <img src="imagens/cabecalho.jpg" height="140" style="border: 0px solid black"></td> </div>
+        <div id="links" align="center">
+            <h4 class="links">
+                <span class="links">
+                    <a href="index.html" class="links">Página inicial </a>
+                    <a href="Computadores.html" class="links">Computadores </a>
+                    <a href="Hierarquia.html" class="links">Memórias</a>
+                    <a href="Von Neumann.html" class="links">Von Neumann</a>
+                    <a href="Organização.html" class="links">Organização de Computadores</a>
+                    <a href="barramento.html" class="links">Barramento</a>
+                    <a href="../index.html" class="links">Sobre o BES-classes</a>
+                </span></h4>
+        
+        </div>
+    </div>
+</div>
+</head>
+<body>
+    <div id="menu-wrapper">
+        <ul id="menu" class="menu" align="left">
+            <li>
+                <a href="#">☰ Menu</a>
+                <ul class="submenu">
+                    <li><a href="../index.html">Site Inicial</a></li>
+                    <li><a href="index.html">Arquitetura e Organização de Computadores</a></li>
+                    <li><a href="../ppsw/index.html">Processos de Produção de Software</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+<table class="tabela" border="0" align="center">
+    <tr>
+        <td><br>
+            <div class="gif" align="center">
+                <img src="imagens/organização.gif" class="max-width-100">
+            </div><br>
+            <h2>Arquitetura e Organização de Computadores:</h2>
+        <br>
+        <p>Inicialmente, é importante ressaltar a diferença entre arquitetura e organização, em que a arquitetura é a parte visível ao programador, como a quantidade de bits usados.</p>
+        <p>Agora, a organização é a parte mais física ou de "baixo nível", sendo a implementação da arquitetura, ou seja, como será implementada, como, por exemplo, através da CPU, memória... e como eles vão interagir entre si para cumprir o propósito definido.</p>
+        <p>Além disso, a arquitetura é muito importante para a compatibilidade do código, como é o caso do IBM System/370, que compartilha a mesma arquitetura básica e gera a mesma compatibilidade, porém vai mudando a <b>organização</b>.</p>
+        <br>
+        
+        <br>
+        
+        <h2>Estrutura e função:</h2>
+        <div class="gif" align="center">
+            <img src="imagens/Arquitetura Basica.png" class="max-width-100">
+        </div>
+        <p><ul>
+            <li>Estrutura - É a maneira como os componentes interagem entre si.</li>
+            <li>Função - São as funções que cada componente executa no sistema como um todo, por exemplo, alguns processam dados, outros fazem o armazenamento de dados...</li>
+            </ul>
+        </p>
+        <br>
+        <p>Atualmente, os computadores seguem a arquitetura proposta por Von Neumann, reunindo os diversos componentes necessários para o funcionamento de um computador: Memória, Unidade Lógica e Aritmética, Unidade Central de Processamento e Unidade de Controle.</p>
+        <br>
+        <h2>Processadores</h2><br>
+        <div class="gif" align="center">
+            <img src="imagens/processador.jpg" class="max-width-100">
+        </div><br>
+        <p>Os processadores têm a função de processar os dados através de instruções. Dessa forma, o processador é composto por:
+        <ol>
+            <li>ULA - Unidade Lógica e Aritmética: É a responsável por executar cálculos aritméticos e lógicos, sendo alguns exemplos: AND (só é verdade se ambos forem verdadeiros), OR (é verdadeiro se pelo menos um for verdadeiro), XOR (é verdadeiro se as variáveis assumirem valores diferentes entre si), NOT (negação, é verdadeiro se não for verdadeiro).</li>
+            <li>UC - Unidade de Controle: É a responsável pelo controle das instruções dentro do processador, garantindo que o que é pedido seja executado corretamente. Por exemplo, quando é inserido um dado no barramento, a Unidade de Controle o retira e o armazena.</li>
+            <li>Obs: Barramento - responsável por transmitir dados entre elementos (como um fio).</li>
+            <li>Registradores: Os registradores são como pequenas memórias presentes no processador, porém são extremamente rápidas. Existem dois tipos: Propósitos Gerais (utilizados para armazenar dados) e Específicos (armazenam informações necessárias para executar uma instrução e são comandados pela unidade de controle).</li>
+            <li>Exemplos de registradores específicos são: PC (Contador de programa), responsável por armazenar a próxima posição de instrução que será executada, e RI (Registrador de Instrução), que armazena o código da instrução que está sendo executada.</li>
+            
+        </ol>
+        </p>
+        <br>
+        <h2>Instruções</h2><br>
+        <p>As instruções são responsáveis por coordenar o que precisa ser feito, ou seja, o que será executado pelo computador, como por exemplo um programa, que é composto por diversas instruções que são executadas em uma ordem específica.</p>
+        <p>OPCODE - Código binário que identifica a instrução, executando em conjunto com outras funções, como o Operando, que muitas vezes aponta a localização de um dado em particular.</p>
+        <p>Existem diversos tipos de instruções, incluindo:
+        <ol>
+            <li>Matemáticas e Lógicas</li>
+            <li>Movimentação de Dados</li>
+            <li>Entrada e Saída</li>
+            <li>Controle</li>
+        </ol>
+        </p>
+        <p>Além disso, para serem executadas, segue-se um passo a passo:
+        <ul>
+            <li>S1 - Busca a instrução na memória</li>
+            <li>S2 - Decodifica a instrução pelo processador</li>
+            <li>S3 - Busca o operando na memória</li>
+            <li>S4 - Executa a instrução pelo processador</li>
+            <li>S5 - Escrita do resultado</li>
+        </ul>
+        </p>
+        <br>
+        <h2>Paralelismo</h2><br>
+        <div class="gif" align="center">
+            <img src="imagens/Pipeline.png" class="max-width-100">
+        </div><br>
+        <p>O paralelismo é o processo pelo qual o processador divide os passos necessários para executar uma determinada função. Dessa forma, os passos podem ser controlados por partes menores, classificando o clock do processador, que é definido pelo tempo que cada passo (estado) levará para ser executado.</p>
+        <p>Sob essa ótica, o paralelismo é uma ótima escolha para evitar a necessidade de esperar a liberação dos dados pela memória.</p>
+        <p>Assim, o paralelismo pode ser executado de duas formas: por Instruções ou por Hardware. Por exemplo:
+        <ul>
+            <li>Instruções: É quando várias etapas são executadas em paralelo em diferentes partes do processador, como o Pipeline, que executa em cada parte da CPU uma ação, e quando todas terminam, o processo é concluído.</li>
+            <li>Hardware: Ocorre quando há mais de um processador, permitindo a divisão dos componentes, como é o caso dos <b>Multiprocessadores</b>, que são processadores interligados que executam instruções de um mesmo programa ao mesmo tempo e compartilham a mesma memória (cada um possui sua própria memória individual).</li>
+
+        </ul>
+        </p>
+        <p>Por fim, os últimos conceitos essenciais são CIS e RISC, que são:
+        <ul>
+            <li>CIS - É um tipo antigo de processador que possui uma grande quantidade de instruções já gravadas nele, visando acelerar sua velocidade através da eliminação da necessidade de buscar as operações.</li>
+            <li>RISC - É o contrário do CIS, possuindo poucas instruções, apenas as mais essenciais e frequentes.</li>
+            Obs: Processadores CISC são mais utilizados em computadores, enquanto os RISC são comuns em dispositivos móveis devido à sua eficiência energética e tamanho compacto.
+        </ul>
+        </p>
+        </td>
+    </tr>
+</table>
+<footer class="creditos">
+    © 2023 Alan Andrade Vasconi de Souza.
+</footer>
+
+</body>
+</html>

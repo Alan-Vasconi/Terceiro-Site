@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="arquitetura.css">
+    <title>BES - Classes</title>
+
+<div id="cabecalho" align="center">
+        <div id="imagem">
+        <img src="imagens/cabecalho.jpg" height="140" style="border: 0px solid black"></td> </div>
+        <div id="links" align="center">
+            <h4 class="links">
+                <span class="links">
+                    <a href="index.html" class="links">Página inicial </a>
+                    <a href="Computadores.html" class="links">Computadores </a>
+                    <a href="Hierarquia.html" class="links">Memórias</a>
+                    <a href="Von Neumann.html" class="links">Von Neumann</a>
+                    <a href="Organização.html" class="links">Organização de Computadores</a>
+                    <a href="barramento.html" class="links">Barramento</a>
+                    <a href="../index.html" class="links">Sobre o BES-classes</a>
+                </span></h4>
+        
+        </div>
+    </div>
+</head>
+<div id="menu-wrapper">
+    <ul id="menu" class="menu" align="left">
+        <li>
+            <a href="#">☰ Menu</a>
+            <ul class="submenu">
+                <li><a href="../index.html">Site Inicial</a></li>
+                <li><a href="index.html">Arquitetura e Organização de Computadores</a></li>
+                <li><a href="../ppsw/index.html">Processos de Produção de Software</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<body>
+    <table class="tabela" border="0" width="900" align="center">
+        
+        <tr>
+            <td colspan="2">
+                <br>
+                
+                <h2><strong>Sobre barramentos e dispositivos de entrada e saida: </strong></h2>
+                
+                <br>
+                <div class="gif" align="center">
+                    <img src="imagens/barramento.gif" class="max-width-100">
+                </div>
+            
+                <br>
+                
+                <p>Dentro dos computadores há a essencial necessidade ed comunicação, no qual, possibilita o intercâmbio de dados entre os componentes como por exemplo: Microprocessador entre outros componentes(teclado,impressora...)</p>
+                <p>Desta maneira esse processo ocorre em basicamente 3 entidades, sendo elas:
+                    <ul>
+                        <li>Entidade Fonte / Destino: Podem ser caracterizadas em qualquer das 3 classes de elementos ( CPU, memória e periférico )</li>
+                        <li>Dados: Estes como já conhecidos, são os próprios dados propriamente que serão utilizados.</li>
+                    </ul>
+                </p><br>
+                <h4>Obs: A informação que é transferida pode ser tanto instrução quanto dados, podendo ser manipulados.</h4><br>
+
+                <p>A partir disto, é incontestável a importância da tecnologia de comunicação na arquitetura de computadores. No qual, ela é que define se terá um bom ou mau desempenho global os sistemas operacionais, devido a responsabilidade de interconectar os diversos componentes dos sistemas computacionais.</p>
+                <br>
+                <h2>Dispositivos de Entrada/Saída:</h2><br>
+                <div class="gif" align="center">
+                    <img src="imagens/Saida.gif" class="max-width-100">
+                </div>
+                
+                <br>
+            
+                <p>Os componenetes de entrada e saída são aqueles que possibilitam a troca de dados a serem tratados pelo computador humano (aquele que está programando) com outros equipamentos(como outro computador por exemplo), desta forma a organização dos dispositivos de entrada e saída dão de duas formas:
+                    <ul>
+                        <br>
+                        <li>Modo adaptado para computadores de grande porte(MainFrame): Este modo é caracterizado devido a sua vantagem de tratamento simultaneo do processador e do canal de entrada e saída, no qual, os elementos de E/S consistem em processadores especializados para  tratarem os dados antes de transmitirem para o computador ( que ocorre por interrupções, no qual, o processador interrompe seu processamento normal para lidar com as informações recebidas. Desta maneira, esse procedimento requer diversos barramentos como o de memória, dados, dispositivos de Entrada e Saída e um para troca de dados entre a memória principal e o processador(CPU))</li>
+
+                        <li>Modo adaptado para microcomputadores: Esse modo é considerado o mais simples e usual, devido ao fato de estar presente na maioria dos microcomputadores, no qual, possui uma organização simples com os sistemas dispostos em um chassi. Desta maneira, a placa mãe contém um barramento impresso nela que se conecta com diversos circuitos e conectores. Ademais, a estrutura lógica do microcomputador inclui: microprocessador, memória principal e periféricos ( controlador e dispositivo de entrada e saída).</li>
+                        <h5 style="font-style:italic;">Obs: O controlador periférico pode ser uma placa conectada a um slot do barramento ou ao circuito integrado da placa-mãe, sendo que sua principal função é gerenciar os dispositivos e controlar o acesso ao barramento do computador, podendo até mesmo ler e escrever informações diretamente na memória principal usando a técnica DMA(Direct Memory Acess).</h5>
+                        <br><li>Alguns exemplos de periféricos de entrada e saída são:
+                            <ul><br>
+                                <li>Terminais de vídeo</li>
+                                <li>Modem</li>
+                                <li>Mouse</li>
+                                <li>Impressoras</li>
+                            </ul>
+                        </li>
+                    </ul><br>
+                </p>    
+                <br>
+                <h2>Modos de Transmissão</h2>
+                <br>
+                <div class="gif" align="center">
+                    <img src="imagens/transmissão.gif" class="max-width-100">
+                </div><br>
+                <p>Partindo de todos os conteúdos já aprendidos anteriormente, inicia-se o tema: Modos de Transmissão, no qual, os dados são manipulados por um microprocessador em formato binário em diversos tamanhos de palavras(8 bits, 16 bits...). Ademais, existem 2 modos de transmissão das informações codificadas, sendo elas:
+                    <ul>
+                        <li>Modo de transmissão Paralelo</li>
+                        <li>Modo de transmissão Serial</li>
+                    </ul></p><br>
+                <div class="continuar-lendo">
+                <a href="barramentos2.html">Continuar lendo</a>
+                </div>
+            </td>   
+            
+        </tr> 
+    </table>
+    <footer class="creditos">
+        © 2023 Alan Andrade Vasconi de Souza.
+    </footer>
+</body>
+</html>
